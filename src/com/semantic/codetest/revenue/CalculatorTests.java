@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class CalculatorTests {
     // M = 0.2
@@ -17,10 +17,7 @@ public class CalculatorTests {
     @Test
     public void calculateRevenueTest() {
         BigDecimal revenue = new Calculator().calculateRevenue(margin, cost);
-        assertEquals(revenue.compareTo(new BigDecimal(500)) == 0);
-    }
-
-    private void assertEquals(boolean b) {
+        assertEquals(0, revenue.compareTo(new BigDecimal(500)));
     }
 
 }
