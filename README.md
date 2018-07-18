@@ -10,4 +10,9 @@ Implement the following:
 import java.math.BigDecimal;
 
 public interface RevenueCalculator { 
-    BigDecimal 
+    BigDecimal calculateRevenue(
+        BigDecimal marginPercentage,
+        BigDecimal costOfGoods
+    );
+}
+```
