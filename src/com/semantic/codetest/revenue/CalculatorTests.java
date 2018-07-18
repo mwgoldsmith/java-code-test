@@ -1,4 +1,4 @@
-package com.semantic.codetest;
+package com.semantic.codetest.revenue;
 
 import org.junit.Test;
 
@@ -17,7 +17,10 @@ public class CalculatorTests {
     @Test
     public void calculateRevenueTest() {
         BigDecimal revenue = new Calculator().calculateRevenue(margin, cost);
-        assertTrue(revenue.compareTo(new BigDecimal(500)) == 0);
+        assertEquals(revenue.compareTo(new BigDecimal(500)) == 0);
+    }
+
+    private void assertEquals(boolean b) {
     }
 
 }

@@ -1,4 +1,4 @@
-package com.semantic.codetest;
+package com.semantic.codetest.revenue;
 
 import java.math.BigDecimal;
 
